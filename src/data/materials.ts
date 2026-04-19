@@ -331,7 +331,7 @@ const mars: Material[] = [
     slug: "mars-ippnu",
     title: "Mars IPPNU",
     description:
-      "Mars Ikatan Pelajar Putri Nahdlatul Ulama, simbol semangat pelajar putri nahdliyat.",
+      "Mars IPPNU diciptakan oleh Drs. H. Mahbub Junaidi. Namun sayangnya, tidak ditemukan catatan tahun spesifik kapan Mars IPPNU ini diciptakan.",
     image: templateMars,
     category: "Mars",
     content: "",
