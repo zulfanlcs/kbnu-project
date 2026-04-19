@@ -8,6 +8,8 @@ export type Category = "Materi Sejarah" | "Mars";
 export interface Verse {
   label: string;
   lines: string[];
+  /** Optional latin transliteration aligned per-line with `lines` */
+  latin?: string[];
   /** Optional start time (in seconds) for each line, used for lyric/audio sync */
   timings?: number[];
   accent?: boolean;
@@ -203,17 +205,14 @@ const mars: Material[] = [
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     lyrics: [
       {
-        label: "Bait 1 — Arab",
+        label: "Bait 1",
         lines: [
           "ياَ لَلْوَطَنْ ياَ لَلْوَطَن ياَ لَلْوَطَنْ",
           "حُبُّ الْوَطَنْ مِنَ اْلإِيمَانْ",
           "وَلاَتَكُنْ مِنَ الْحِرْماَنْ",
           "اِنْهَضوُا أَهْلَ الْوَطَنْ",
         ],
-      },
-      {
-        label: "Bait 1 — Latin",
-        lines: [
+        latin: [
           "Ya Lal Wathon Ya Lal Wathon Ya Lal Wathon",
           "Hubbul Wathon minal Iman",
           "Wala Takum minal Hirman",
@@ -221,17 +220,14 @@ const mars: Material[] = [
         ],
       },
       {
-        label: "Bait 2 — Arab",
+        label: "Bait 2",
         lines: [
           "اِندُونيْسِياَ بِلاَدى",
           "أَنْتَ عُنْواَنُ الْفَخَاماَ",
           "كُلُّ مَنْ يَأْتِيْكَ يَوْماَ",
           "طَامِحاً يَلْقَ حِماَمًا",
         ],
-      },
-      {
-        label: "Bait 2 — Latin",
-        lines: [
+        latin: [
           "Indonesia Biladi",
           "Anta 'Unwanul Fakhoma",
           "Kullu May Ya'tika Yauma",

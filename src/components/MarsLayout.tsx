@@ -312,8 +312,9 @@ const MarsLayout = ({ material }: Props) => {
                 {verse.lines.map((line, lIdx) => {
                   const key = `${vIdx}-${lIdx}`;
                   const isActive = activeKey === key;
+                  const latinLine = verse.latin?.[lIdx];
                   return (
-                    <p
+                    <div
                       key={lIdx}
                       ref={isActive ? activeLineRef : null}
                       onClick={() => {
@@ -327,18 +328,39 @@ const MarsLayout = ({ material }: Props) => {
                           }
                         }
                       }}
-                      className={`leading-relaxed rounded-lg px-3 py-1.5 -mx-3 transition-all duration-300 ${
+                      className={`rounded-lg px-3 py-2 -mx-3 transition-all duration-300 ${
                         verse.timings?.[lIdx] !== undefined ? "cursor-pointer" : ""
                       } ${
                         isActive
-                          ? "bg-brand/15 text-brand font-semibold scale-[1.02] shadow-sm"
-                          : verse.accent
-                            ? "text-lg md:text-xl font-display italic text-foreground"
-                            : "text-base md:text-lg text-foreground/90 hover:bg-muted/40"
+                          ? "bg-brand/15 text-brand scale-[1.02] shadow-sm"
+                          : "hover:bg-muted/40"
                       }`}
                     >
-                      {line}
-                    </p>
+                      <p
+                        dir="rtl"
+                        lang="ar"
+                        className={`leading-loose font-display ${
+                          isActive
+                            ? "font-semibold"
+                            : verse.accent
+                              ? "text-xl md:text-2xl text-foreground"
+                              : "text-xl md:text-2xl text-foreground"
+                        }`}
+                      >
+                        {line}
+                      </p>
+                      {latinLine && (
+                        <p
+                          className={`mt-1 leading-relaxed italic ${
+                            isActive
+                              ? "font-medium"
+                              : "text-sm md:text-base text-muted-foreground"
+                          }`}
+                        >
+                          {latinLine}
+                        </p>
+                      )}
+                    </div>
                   );
                 })}
               </div>
