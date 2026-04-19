@@ -4,6 +4,7 @@ import templateMars from "@/assets/template-mars.jpg";
 import marsNuAudio from "@/assets/mars-nu.mp3";
 import marsSyubbanulWathonAudio from "@/assets/mars-syubbanul-wathon.mp3";
 import marsIpnuAudio from "@/assets/mars-ipnu.mp3";
+import marsIppnuAudio from "@/assets/mars-ippnu.mp3";
 
 export type Category = "Materi Sejarah" | "Mars";
 
@@ -333,8 +334,48 @@ const mars: Material[] = [
       "Mars Ikatan Pelajar Putri Nahdlatul Ulama, simbol semangat pelajar putri nahdliyat.",
     image: templateMars,
     category: "Mars",
-    content: "Tulis lirik Mars IPPNU di sini.",
+    content: "",
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    audioUrl: marsIppnuAudio,
+    lyrics: [
+      {
+        label: "Bait 1",
+        lines: [
+          "Sirnalah gelap terbitlah terang",
+          "Mentari timur sudah bercahya",
+          "Ayunkan langkah pukul genderang",
+          "Segala rintangan mundur semua",
+        ],
+      },
+      {
+        label: "Bait 2",
+        lines: [
+          "Tiada laut sedalam iman",
+          "Tiada gunung setinggi cita",
+          "Sujud kepala kepada Tuhan",
+          "Tegak kepala lawan derita",
+        ],
+      },
+      {
+        label: "Reff",
+        accent: true,
+        lines: [
+          "Di malam yang sepi di pagi yang terang",
+          "Hatiku teguh bagimu ikatan",
+          "Di malam yang hening di hati membakar",
+          "Hatiku penuh bagimu pertiwi",
+        ],
+      },
+      {
+        label: "Bait 3",
+        lines: [
+          "Mekar seribu bunga di taman",
+          "Mekar cintaku pada ikatan",
+          "Ilmu kucari amal kuberi",
+          "Untuk agama bangsa dan negeri",
+        ],
+      },
+    ],
   },
   {
     slug: "mars-ansor",
