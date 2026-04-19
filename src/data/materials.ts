@@ -199,7 +199,7 @@ const mars: Material[] = [
     slug: "mars-syubbanul-wathon",
     title: "Syubbanul Wathon",
     description:
-      "Mars cinta tanah air karya KH Wahab Hasbullah yang menggelorakan nasionalisme religius.",
+      "Mars cinta tanah air karya KH Wahab Hasbullah pada tahun 1916 \nyang menggelorakan nasionalisme religius.",
     image: templateMars,
     category: "Mars",
     content: "",

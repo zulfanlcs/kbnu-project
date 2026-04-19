@@ -178,7 +178,7 @@ const MarsLayout = ({ material }: Props) => {
           <h1 className="text-4xl md:text-6xl font-bold leading-[1.05] bg-gradient-hero bg-clip-text text-transparent">
             {material.title}
           </h1>
-          <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+          <p className="text-base md:text-lg text-muted-foreground leading-relaxed whitespace-pre-line">
             {material.description}
           </p>
         </div>
