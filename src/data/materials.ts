@@ -280,8 +280,49 @@ const mars: Material[] = [
       "Lagu semangat Ikatan Pelajar Nahdlatul Ulama untuk generasi muda nahdliyin.",
     image: templateMars,
     category: "Mars",
-    content: "Tulis lirik Mars IPNU di sini.",
+    content: "",
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    lyrics: [
+      {
+        label: "Bait 1",
+        lines: [
+          "Wahai pelajar Indonesia",
+          "Siapkanlah barisanmu",
+          "Bertekat bulat bersatu",
+          "Di bawah kibaran panji IPNU",
+        ],
+      },
+      {
+        label: "Bait 2",
+        lines: [
+          "Wahai pelajar islam yang setia",
+          "Kembangkanlah agamamu",
+          "Dalam Negara Indonesia",
+          "Tanah air yang ku cinta",
+        ],
+      },
+      {
+        label: "Bait 3",
+        lines: [
+          "Dengan berpedoman kita belajar",
+          "Berjuang serta bertakwa",
+          "Kita bina watak nusa dan bangsa",
+          "Tuk kejayaan masa depan",
+        ],
+      },
+      {
+        label: "Reff",
+        accent: true,
+        lines: [
+          "Bersatu wahai pelajar islam jaya",
+          "Tunaikanlah kewajiban yang mulya",
+          "Ayo maju pantang mundur",
+          "Dengan rahmat tuhan kita perjuangkan",
+          "Ayo maju pantang mundur",
+          "Pasti tercapai adil makmur",
+        ],
+      },
+    ],
   },
   {
     slug: "mars-ippnu",
