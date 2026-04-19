@@ -2,6 +2,7 @@ import nuMosque from "@/assets/nu-mosque.jpg";
 import templateSejarah from "@/assets/template-sejarah.jpg";
 import templateMars from "@/assets/template-mars.jpg";
 import marsNuAudio from "@/assets/mars-nu.mp3";
+import marsSyubbanulWathonAudio from "@/assets/mars-syubbanul-wathon.mp3";
 
 export type Category = "Materi Sejarah" | "Mars";
 
@@ -203,9 +204,11 @@ const mars: Material[] = [
     category: "Mars",
     content: "",
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    audioUrl: marsSyubbanulWathonAudio,
     lyrics: [
       {
         label: "Bait 1",
+        timings: [6, 14, 20, 26],
         lines: [
           "ياَ لَلْوَطَنْ ياَ لَلْوَطَن ياَ لَلْوَطَنْ",
           "حُبُّ الْوَطَنْ مِنَ اْلإِيمَانْ",
@@ -221,6 +224,7 @@ const mars: Material[] = [
       },
       {
         label: "Bait 2",
+        timings: [33, 40, 46, 52],
         lines: [
           "اِندُونيْسِياَ بِلاَدى",
           "أَنْتَ عُنْواَنُ الْفَخَاماَ",
@@ -237,6 +241,7 @@ const mars: Material[] = [
       {
         label: "Terjemahan — Bait 1",
         accent: true,
+        timings: [60, 66, 72, 78],
         lines: [
           "Pusaka Hati Wahai Tanah Airku",
           "Cintamu dalam Imanku",
@@ -247,6 +252,7 @@ const mars: Material[] = [
       {
         label: "Terjemahan — Bait 2",
         accent: true,
+        timings: [85, 91, 97, 103],
         lines: [
           "Pusaka Hati Wahai Tanah Airku",
           "Cintaku dalam Imanku",
@@ -257,6 +263,7 @@ const mars: Material[] = [
       {
         label: "Terjemahan — Bait 3",
         accent: true,
+        timings: [110, 115, 120, 125],
         lines: [
           "Indonesia Negeriku",
           "Engkau Panji Martabatku",
