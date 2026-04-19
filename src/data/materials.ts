@@ -199,8 +199,76 @@ const mars: Material[] = [
       "Mars cinta tanah air karya KH Wahab Hasbullah yang menggelorakan nasionalisme religius.",
     image: templateMars,
     category: "Mars",
-    content: "Tulis lirik Syubbanul Wathon di sini.",
+    content: "",
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    lyrics: [
+      {
+        label: "Bait 1 — Arab",
+        lines: [
+          "ياَ لَلْوَطَنْ ياَ لَلْوَطَن ياَ لَلْوَطَنْ",
+          "حُبُّ الْوَطَنْ مِنَ اْلإِيمَانْ",
+          "وَلاَتَكُنْ مِنَ الْحِرْماَنْ",
+          "اِنْهَضوُا أَهْلَ الْوَطَنْ",
+        ],
+      },
+      {
+        label: "Bait 1 — Latin",
+        lines: [
+          "Ya Lal Wathon Ya Lal Wathon Ya Lal Wathon",
+          "Hubbul Wathon minal Iman",
+          "Wala Takum minal Hirman",
+          "Inhadlu Alal Wathon",
+        ],
+      },
+      {
+        label: "Bait 2 — Arab",
+        lines: [
+          "اِندُونيْسِياَ بِلاَدى",
+          "أَنْتَ عُنْواَنُ الْفَخَاماَ",
+          "كُلُّ مَنْ يَأْتِيْكَ يَوْماَ",
+          "طَامِحاً يَلْقَ حِماَمًا",
+        ],
+      },
+      {
+        label: "Bait 2 — Latin",
+        lines: [
+          "Indonesia Biladi",
+          "Anta 'Unwanul Fakhoma",
+          "Kullu May Ya'tika Yauma",
+          "Thomihay Yalqo Himama",
+        ],
+      },
+      {
+        label: "Terjemahan — Bait 1",
+        accent: true,
+        lines: [
+          "Pusaka Hati Wahai Tanah Airku",
+          "Cintamu dalam Imanku",
+          "Jangan Halangkan Nasibmu",
+          "Bangkitlah Hai Bangsaku",
+        ],
+      },
+      {
+        label: "Terjemahan — Bait 2",
+        accent: true,
+        lines: [
+          "Pusaka Hati Wahai Tanah Airku",
+          "Cintaku dalam Imanku",
+          "Jangan Halangkan Nasibmu",
+          "Bangkitlah Hai Bangsaku",
+        ],
+      },
+      {
+        label: "Terjemahan — Bait 3",
+        accent: true,
+        lines: [
+          "Indonesia Negeriku",
+          "Engkau Panji Martabatku",
+          "Siapa Datang Mengancammu",
+          "Kan Binasa di bawah dulimu",
+        ],
+      },
+    ],
   },
   {
     slug: "mars-ipnu",
