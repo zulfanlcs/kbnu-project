@@ -278,7 +278,7 @@ const mars: Material[] = [
     slug: "mars-ipnu",
     title: "Mars IPNU",
     description:
-      "Lagu semangat Ikatan Pelajar Nahdlatul Ulama untuk generasi muda nahdliyin.",
+      "Mars IPNU diciptakan oleh Drs. H. Shomuri (Moh. Shomury W). Namun sayangnya, tidak ditemukan catatan tahun spesifik kapan Mars IPNU ini diciptakan.",
     image: templateMars,
     category: "Mars",
     content: "",
