@@ -283,6 +283,7 @@ const mars: Material[] = [
     category: "Mars",
     content: "",
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    audioUrl: marsIpnuAudio,
     lyrics: [
       {
         label: "Bait 1",
