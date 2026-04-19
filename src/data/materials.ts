@@ -319,7 +319,7 @@ const mars: Material[] = [
           "Bersatu wahai pelajar islam jaya",
           "Tunaikanlah kewajiban yang mulya",
           "Ayo maju pantang mundur",
-          "Dengan rahmat tuhan kita perjuangkan",
+          "Dengan rahmat Tuhan kita perjuangkan",
           "Ayo maju pantang mundur",
           "Pasti tercapai adil makmur",
         ],
