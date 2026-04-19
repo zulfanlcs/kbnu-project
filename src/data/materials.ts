@@ -2,6 +2,7 @@ import nuMosque from "@/assets/nu-mosque.jpg";
 import templateSejarah from "@/assets/template-sejarah.jpg";
 import templateMars from "@/assets/template-mars.jpg";
 import marsNuAudio from "@/assets/mars-nu.mp3";
+import marsSyubbanulWathonAudio from "@/assets/mars-syubbanul-wathon.mp3";
 
 export type Category = "Materi Sejarah" | "Mars";
 
