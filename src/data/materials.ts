@@ -1,6 +1,23 @@
-import nuMosque from "@/assets/nu-mosque.jpg";
-import templateSejarah from "@/assets/template-sejarah.jpg";
-import templateMars from "@/assets/template-mars.jpg";
+import thumbNahdlatulUlama from "@/assets/thumb-nahdlatul-ulama.jpg";
+import thumbSejarahPesantren from "@/assets/thumb-sejarah-pesantren.jpg";
+import thumbResolusiJihad from "@/assets/thumb-resolusi-jihad.jpg";
+import thumbMuktamarPertamaNu from "@/assets/thumb-muktamar-pertama-nu.jpg";
+import thumbKhHasyimAsyari from "@/assets/thumb-kh-hasyim-asyari.jpg";
+import thumbKhWahabHasbullah from "@/assets/thumb-kh-wahab-hasbullah.jpg";
+import thumbKomiteHijaz from "@/assets/thumb-komite-hijaz.jpg";
+import thumbAhlussunnah from "@/assets/thumb-ahlussunnah.jpg";
+import thumbKhittah1926 from "@/assets/thumb-khittah-1926.jpg";
+import thumbNuKemerdekaan from "@/assets/thumb-nu-kemerdekaan.jpg";
+import thumbMarsNu from "@/assets/thumb-mars-nu.jpg";
+import thumbSyubbanulWathon from "@/assets/thumb-syubbanul-wathon.jpg";
+import thumbMarsIpnu from "@/assets/thumb-mars-ipnu.jpg";
+import thumbMarsIppnu from "@/assets/thumb-mars-ippnu.jpg";
+import thumbMarsAnsor from "@/assets/thumb-mars-ansor.jpg";
+import thumbMarsFatayat from "@/assets/thumb-mars-fatayat.jpg";
+import thumbMarsMuslimat from "@/assets/thumb-mars-muslimat.jpg";
+import thumbMarsBanser from "@/assets/thumb-mars-banser.jpg";
+import thumbMarsPmii from "@/assets/thumb-mars-pmii.jpg";
+import thumbYalalWathon from "@/assets/thumb-yalal-wathon.jpg";
 import marsNuAudio from "@/assets/mars-nu.mp3";
 import marsSyubbanulWathonAudio from "@/assets/mars-syubbanul-wathon.mp3";
 import marsIpnuAudio from "@/assets/mars-ipnu.mp3";
@@ -35,7 +52,7 @@ export interface Material {
 const sejarah: Material[] = [
   {
     slug: "nahdlatul-ulama",
-    image: nuMosque,
+    image: thumbNahdlatulUlama,
     category: "Materi Sejarah",
     title: "Nahdlatul Ulama",
     description:
@@ -48,7 +65,7 @@ const sejarah: Material[] = [
     title: "Sejarah Pesantren Nusantara",
     description:
       "Jejak panjang lembaga pendidikan Islam tradisional yang membentuk wajah keilmuan Indonesia.",
-    image: templateSejarah,
+    image: thumbSejarahPesantren,
     category: "Materi Sejarah",
     content: "Tulis materi pembelajaran Anda di sini.",
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
@@ -58,7 +75,7 @@ const sejarah: Material[] = [
     title: "Resolusi Jihad 1945",
     description:
       "Fatwa bersejarah KH Hasyim Asy'ari yang memantik perjuangan kemerdekaan Indonesia.",
-    image: templateSejarah,
+    image: thumbResolusiJihad,
     category: "Materi Sejarah",
     content: "Tulis materi pembelajaran Anda di sini.",
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
@@ -68,7 +85,7 @@ const sejarah: Material[] = [
     title: "Muktamar Pertama NU",
     description:
       "Tonggak awal perjalanan organisasi Nahdlatul Ulama dalam menetapkan arah perjuangan.",
-    image: templateSejarah,
+    image: thumbMuktamarPertamaNu,
     category: "Materi Sejarah",
     content: "Tulis materi pembelajaran Anda di sini.",
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
@@ -78,7 +95,7 @@ const sejarah: Material[] = [
     title: "KH Hasyim Asy'ari",
     description:
       "Biografi Hadratussyaikh, pendiri NU dan tokoh ulama besar Nusantara.",
-    image: templateSejarah,
+    image: thumbKhHasyimAsyari,
     category: "Materi Sejarah",
     content: "Tulis materi pembelajaran Anda di sini.",
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
@@ -88,7 +105,7 @@ const sejarah: Material[] = [
     title: "KH Wahab Hasbullah",
     description:
       "Sang penggerak NU, perumus konsep Mabadi Khaira Ummah dan pencipta Syubbanul Wathon.",
-    image: templateSejarah,
+    image: thumbKhWahabHasbullah,
     category: "Materi Sejarah",
     content: "Tulis materi pembelajaran Anda di sini.",
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
@@ -98,7 +115,7 @@ const sejarah: Material[] = [
     title: "Komite Hijaz",
     description:
       "Misi diplomatik ulama Nusantara yang menjadi cikal bakal lahirnya Nahdlatul Ulama.",
-    image: templateSejarah,
+    image: thumbKomiteHijaz,
     category: "Materi Sejarah",
     content: "Tulis materi pembelajaran Anda di sini.",
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
@@ -108,7 +125,7 @@ const sejarah: Material[] = [
     title: "Ahlussunnah wal Jama'ah",
     description:
       "Manhaj keagamaan NU yang moderat, toleran, dan berimbang di tengah keragaman umat.",
-    image: templateSejarah,
+    image: thumbAhlussunnah,
     category: "Materi Sejarah",
     content: "Tulis materi pembelajaran Anda di sini.",
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
@@ -118,7 +135,7 @@ const sejarah: Material[] = [
     title: "Khittah 1926",
     description:
       "Kembali ke jati diri NU sebagai jam'iyyah diniyah ijtimaiyah, bukan partai politik.",
-    image: templateSejarah,
+    image: thumbKhittah1926,
     category: "Materi Sejarah",
     content: "Tulis materi pembelajaran Anda di sini.",
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
@@ -128,7 +145,7 @@ const sejarah: Material[] = [
     title: "NU dan Kemerdekaan RI",
     description:
       "Peran strategis ulama dan santri NU dalam memperjuangkan dan mempertahankan kemerdekaan.",
-    image: templateSejarah,
+    image: thumbNuKemerdekaan,
     category: "Materi Sejarah",
     content: "Tulis materi pembelajaran Anda di sini.",
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
@@ -141,7 +158,7 @@ const mars: Material[] = [
     title: "Mars Nahdlatul Ulama",
     description:
       "Lagu kebangsaan NU yang membakar semangat perjuangan dan pengabdian para nahdliyin.",
-    image: templateMars,
+    image: thumbMarsNu,
     category: "Mars",
     content: "",
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
@@ -202,7 +219,7 @@ const mars: Material[] = [
     title: "Syubbanul Wathon",
     description:
       "Mars cinta tanah air karya KH Wahab Hasbullah pada tahun 1916 \nyang menggelorakan nasionalisme religius.",
-    image: templateMars,
+    image: thumbSyubbanulWathon,
     category: "Mars",
     content: "",
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
@@ -280,7 +297,7 @@ const mars: Material[] = [
     title: "Mars IPNU",
     description:
       "Mars IPNU diciptakan oleh Drs. H. Shomuri (Moh. Shomury W). Namun sayangnya, tidak ditemukan catatan tahun spesifik kapan Mars IPNU ini diciptakan.",
-    image: templateMars,
+    image: thumbMarsIpnu,
     category: "Mars",
     content: "",
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
@@ -332,7 +349,7 @@ const mars: Material[] = [
     title: "Mars IPPNU",
     description:
       "Mars IPPNU diciptakan oleh Drs. H. Mahbub Junaidi. Namun sayangnya, tidak ditemukan catatan tahun spesifik kapan Mars IPPNU ini diciptakan.",
-    image: templateMars,
+    image: thumbMarsIppnu,
     category: "Mars",
     content: "",
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
@@ -382,7 +399,7 @@ const mars: Material[] = [
     title: "Mars GP Ansor",
     description:
       "Lagu kebangsaan Gerakan Pemuda Ansor yang menyalakan semangat kepanduan dan bela negara.",
-    image: templateMars,
+    image: thumbMarsAnsor,
     category: "Mars",
     content: "Tulis lirik Mars GP Ansor di sini.",
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
@@ -392,7 +409,7 @@ const mars: Material[] = [
     title: "Mars Fatayat NU",
     description:
       "Mars perempuan muda NU yang mengabdi pada agama, bangsa, dan kemanusiaan.",
-    image: templateMars,
+    image: thumbMarsFatayat,
     category: "Mars",
     content: "Tulis lirik Mars Fatayat NU di sini.",
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
@@ -402,7 +419,7 @@ const mars: Material[] = [
     title: "Mars Muslimat NU",
     description:
       "Lagu kebangsaan Muslimat NU yang menggambarkan peran perempuan dalam jamiyyah.",
-    image: templateMars,
+    image: thumbMarsMuslimat,
     category: "Mars",
     content: "Tulis lirik Mars Muslimat NU di sini.",
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
@@ -412,7 +429,7 @@ const mars: Material[] = [
     title: "Mars Banser",
     description:
       "Mars Barisan Ansor Serbaguna, penjaga ulama dan benteng NKRI.",
-    image: templateMars,
+    image: thumbMarsBanser,
     category: "Mars",
     content: "Tulis lirik Mars Banser di sini.",
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
@@ -422,7 +439,7 @@ const mars: Material[] = [
     title: "Mars PMII",
     description:
       "Lagu Pergerakan Mahasiswa Islam Indonesia yang membakar semangat kaum intelektual muda.",
-    image: templateMars,
+    image: thumbMarsPmii,
     category: "Mars",
     content: "Tulis lirik Mars PMII di sini.",
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
@@ -432,7 +449,7 @@ const mars: Material[] = [
     title: "Ya Lal Wathon",
     description:
       "Syair cinta tanah air yang menjadi ruh perjuangan nahdliyin sepanjang masa.",
-    image: templateMars,
+    image: thumbYalalWathon,
     category: "Mars",
     content: "Tulis lirik Ya Lal Wathon di sini.",
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
