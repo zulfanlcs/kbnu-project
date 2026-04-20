@@ -23,6 +23,7 @@ import marsSyubbanulWathonAudio from "@/assets/mars-syubbanul-wathon.mp3";
 import marsIpnuAudio from "@/assets/mars-ipnu.mp3";
 import marsIppnuAudio from "@/assets/mars-ippnu.mp3";
 import marsAnsorAudio from "@/assets/mars-ansor.mp3";
+import marsFatayatAudio from "@/assets/mars-fatayat.mp3";
 
 export type Category = "Materi Sejarah" | "Mars";
 
@@ -452,8 +453,39 @@ const mars: Material[] = [
       "Mars perempuan muda NU yang mengabdi pada agama, bangsa, dan kemanusiaan.",
     image: thumbMarsFatayat,
     category: "Mars",
-    content: "Tulis lirik Mars Fatayat NU di sini.",
+    content: "",
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    audioUrl: marsFatayatAudio,
+    lyrics: [
+      {
+        label: "Bait 1",
+        lines: [
+          "Fatayat Nahdlatul Ulama",
+          "Teladan pemudi utama",
+          "Berguna bagi nusa bangsa",
+          "Menjunjung tinggi agama",
+        ],
+      },
+      {
+        label: "Bait 2",
+        lines: [
+          "Fatayat Nahdlatul Ulama",
+          "Wanita berpribadi luhur",
+          "Setia, terampil, dan jujur",
+          "Menuju masyarakat adil makmur",
+        ],
+      },
+      {
+        label: "Reff",
+        accent: true,
+        lines: [
+          "Fatayat berasas Pancasila",
+          "Bersendi Al-Qur'an dan Sunnah",
+          "Ahlussunnah wal jama'ah",
+          "Menuju ridho Allah (2x)",
+        ],
+      },
+    ],
   },
   {
     slug: "mars-muslimat",
