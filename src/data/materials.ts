@@ -399,7 +399,7 @@ const mars: Material[] = [
     slug: "mars-ansor",
     title: "Mars GP Ansor",
     description:
-      "Lagu kebangsaan Gerakan Pemuda Ansor yang menyalakan semangat kepanduan dan bela negara.",
+      "Mars GP Ansor diciptakan oleh Iskandar (komposer) dengan lirik yang ditulis oleh Mahbub Djunaidi. Mars GP Ansor yang populer (dengan lirik \"Darah merah darah muda\") diciptakan oleh Mahbub Djunaidi sekitar tahun 1946-1948, pada masa revolusi fisik. Sementara itu, mars pertama Ansor (Nasyid Al-Iqdam) diciptakan setelah Kongres II Ansor di Malang pada tahun 1937. Mars GP Ansor kemudian ditetapkan secara resmi pada Konferensi Besar XVIII di Jakarta pada 2012. ",
     image: thumbMarsAnsor,
     category: "Mars",
     content: "",
