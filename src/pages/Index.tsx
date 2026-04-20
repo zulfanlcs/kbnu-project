@@ -1,27 +1,22 @@
 import { useMemo, useState } from "react";
-import { Heart, Search } from "lucide-react";
+import { Search } from "lucide-react";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { ThumbnailCard } from "@/components/ThumbnailCard";
 import { Input } from "@/components/ui/input";
 import { materials } from "@/data/materials";
-import { useFavorites } from "@/hooks/use-favorites";
 
-const CATEGORIES = ["Semua", "Materi Sejarah", "Mars", "Favorit"] as const;
+const CATEGORIES = ["Semua", "Materi Sejarah", "Mars"] as const;
 type Category = (typeof CATEGORIES)[number];
 
 const Index = () => {
   const [query, setQuery] = useState("");
   const [activeCategory, setActiveCategory] = useState<Category>("Semua");
-  const { isFavorite, favorites } = useFavorites();
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
     return materials.filter((m) => {
       const matchesCategory =
-        activeCategory === "Semua" ||
-        (activeCategory === "Favorit"
-          ? isFavorite(m.slug)
-          : m.category === activeCategory);
+        activeCategory === "Semua" || m.category === activeCategory;
       const matchesQuery =
         !q ||
         m.title.toLowerCase().includes(q) ||
@@ -29,7 +24,7 @@ const Index = () => {
         m.description.toLowerCase().includes(q);
       return matchesCategory && matchesQuery;
     });
-  }, [query, activeCategory, isFavorite, favorites]);
+  }, [query, activeCategory]);
 
   return (
     <div className="min-h-screen bg-background">
@@ -63,7 +58,6 @@ const Index = () => {
           <div className="mt-6 flex flex-wrap items-center justify-center gap-2">
             {CATEGORIES.map((cat) => {
               const active = activeCategory === cat;
-              const isFavCat = cat === "Favorit";
               return (
                 <button
                   key={cat}
@@ -76,23 +70,7 @@ const Index = () => {
                   }`}
                   aria-pressed={active}
                 >
-                  {isFavCat && (
-                    <Heart
-                      className={`h-3.5 w-3.5 ${active ? "fill-current" : ""}`}
-                    />
-                  )}
                   {cat}
-                  {isFavCat && favorites.length > 0 && (
-                    <span
-                      className={`ml-0.5 rounded-full px-1.5 text-xs ${
-                        active
-                          ? "bg-brand-foreground/20"
-                          : "bg-muted text-muted-foreground"
-                      }`}
-                    >
-                      {favorites.length}
-                    </span>
-                  )}
                 </button>
               );
             })}
@@ -101,55 +79,33 @@ const Index = () => {
       </section>
 
       <section id="work" className="container pb-24 space-y-16">
-        {activeCategory === "Favorit" ? (
-          filtered.length > 0 && (
-            <div>
+        {(activeCategory === "Semua"
+          ? (["Materi Sejarah", "Mars"] as const)
+          : ([activeCategory] as const)
+        ).map((cat) => {
+          const items = filtered.filter((m) => m.category === cat);
+          if (items.length === 0) return null;
+          return (
+            <div key={cat}>
               <div className="flex items-end justify-between mb-10">
                 <div>
-                  <h2 className="text-3xl md:text-4xl font-bold">Favorit Anda</h2>
+                  <h2 className="text-3xl md:text-4xl font-bold">{cat}</h2>
                   <p className="text-muted-foreground mt-2">
-                    {filtered.length} materi tersimpan
+                    {items.length} karya tersedia
                   </p>
                 </div>
               </div>
               <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-                {filtered.map((item, i) => (
+                {items.map((item, i) => (
                   <ThumbnailCard key={item.slug} {...item} index={i} />
                 ))}
               </div>
             </div>
-          )
-        ) : (
-          (activeCategory === "Semua"
-            ? (["Materi Sejarah", "Mars"] as const)
-            : ([activeCategory] as const)
-          ).map((cat) => {
-            const items = filtered.filter((m) => m.category === cat);
-            if (items.length === 0) return null;
-            return (
-              <div key={cat}>
-                <div className="flex items-end justify-between mb-10">
-                  <div>
-                    <h2 className="text-3xl md:text-4xl font-bold">{cat}</h2>
-                    <p className="text-muted-foreground mt-2">
-                      {items.length} karya tersedia
-                    </p>
-                  </div>
-                </div>
-                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-                  {items.map((item, i) => (
-                    <ThumbnailCard key={item.slug} {...item} index={i} />
-                  ))}
-                </div>
-              </div>
-            );
-          })
-        )}
+          );
+        })}
         {filtered.length === 0 && (
           <p className="text-center text-muted-foreground py-12">
-            {activeCategory === "Favorit"
-              ? "Belum ada materi yang ditambahkan ke favorit. Klik ikon hati pada kartu untuk menyimpannya."
-              : "Tidak ada materi yang cocok dengan pencarian Anda."}
+            Tidak ada materi yang cocok dengan pencarian Anda.
           </p>
         )}
       </section>
