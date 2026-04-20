@@ -32,7 +32,7 @@ const Index = () => {
         <div className="container flex h-16 items-center justify-between">
           <a href="/" className="flex items-center gap-2 font-display font-bold text-3xl">
             <span className="h-8 w-8 rounded-lg bg-gradient-hero shadow-elegant" />
-            Lumen
+            KBNU Online
           </a>
           <ThemeToggle />
         </div>
