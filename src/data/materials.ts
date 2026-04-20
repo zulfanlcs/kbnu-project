@@ -450,7 +450,7 @@ const mars: Material[] = [
     slug: "mars-fatayat",
     title: "Mars Fatayat NU",
     description:
-      "Mars perempuan muda NU yang mengabdi pada agama, bangsa, dan kemanusiaan.",
+      "Mars Fatayat NU diciptakan oleh M. Thoifur Syaerozy bersama Matsani Muzayyin dan Husnul Khotimah Sali. Namun sayangnya, tidak ditemukan catatan tahun spesifik kapan Mars ini diciptakan.",
     image: thumbMarsFatayat,
     category: "Mars",
     content: "",
