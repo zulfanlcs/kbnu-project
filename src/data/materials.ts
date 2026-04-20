@@ -24,6 +24,7 @@ import marsIpnuAudio from "@/assets/mars-ipnu.mp3";
 import marsIppnuAudio from "@/assets/mars-ippnu.mp3";
 import marsAnsorAudio from "@/assets/mars-ansor.mp3";
 import marsFatayatAudio from "@/assets/mars-fatayat.mp3";
+import marsMuslimatAudio from "@/assets/mars-muslimat.mp3";
 
 export type Category = "Materi Sejarah" | "Mars";
 
@@ -494,8 +495,43 @@ const mars: Material[] = [
       "Lagu kebangsaan Muslimat NU yang menggambarkan peran perempuan dalam jamiyyah.",
     image: thumbMarsMuslimat,
     category: "Mars",
-    content: "Tulis lirik Mars Muslimat NU di sini.",
+    content: "",
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    audioUrl: marsMuslimatAudio,
+    lyrics: [
+      {
+        title: "Bait 1",
+        lines: [
+          "Marilah Kaum Ibu Muslimat",
+          "Nahdlatul Ulama nan setia",
+          "Al-Quran, Hadits, Ijma' dan Qiyas",
+          "Menjadi pedoman utama",
+          "Demi agama, nusa, dan bangsa",
+          "Negara damai bahagia",
+        ],
+      },
+      {
+        title: "Bait 2",
+        lines: [
+          "Majulah kaum ibu muslimat",
+          "Pengemban, pembawa amanat",
+          "Pendidik, pembina bunga bangsa",
+          "Menunaikan tugas mulia",
+          "Berilmu, beramal, dan berbakti",
+          "Bertaqwa pada Ilahi",
+        ],
+      },
+      {
+        title: "Reff",
+        accent: true,
+        lines: [
+          "Marilah hai kaum ibu",
+          "Bimbinglah putra-putrimu",
+          "Iman teguh, bijaksana",
+          "Muslimat Indonesia",
+        ],
+      },
+    ],
   },
   {
     slug: "mars-banser",
