@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import { Slider } from "@/components/ui/slider";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { FavoriteButton } from "@/components/FavoriteButton";
 import type { Material, Verse } from "@/data/materials";
 
 const FALLBACK_VERSES: Verse[] = [
@@ -164,7 +165,10 @@ const MarsLayout = ({ material }: Props) => {
             <ArrowLeft className="h-4 w-4" />
             Kembali
           </Link>
-          <ThemeToggle />
+          <div className="flex items-center gap-2">
+            <FavoriteButton slug={material.slug} title={material.title} variant="pill" />
+            <ThemeToggle />
+          </div>
         </div>
       </header>
 
