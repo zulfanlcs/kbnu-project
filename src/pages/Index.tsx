@@ -101,33 +101,55 @@ const Index = () => {
       </section>
 
       <section id="work" className="container pb-24 space-y-16">
-        {(activeCategory === "Semua"
-          ? (["Materi Sejarah", "Mars"] as const)
-          : ([activeCategory] as const)
-        ).map((cat) => {
-          const items = filtered.filter((m) => m.category === cat);
-          if (items.length === 0) return null;
-          return (
-            <div key={cat}>
+        {activeCategory === "Favorit" ? (
+          filtered.length > 0 && (
+            <div>
               <div className="flex items-end justify-between mb-10">
                 <div>
-                  <h2 className="text-3xl md:text-4xl font-bold">{cat}</h2>
+                  <h2 className="text-3xl md:text-4xl font-bold">Favorit Anda</h2>
                   <p className="text-muted-foreground mt-2">
-                    {items.length} karya tersedia
+                    {filtered.length} materi tersimpan
                   </p>
                 </div>
               </div>
               <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-                {items.map((item, i) => (
+                {filtered.map((item, i) => (
                   <ThumbnailCard key={item.slug} {...item} index={i} />
                 ))}
               </div>
             </div>
-          );
-        })}
+          )
+        ) : (
+          (activeCategory === "Semua"
+            ? (["Materi Sejarah", "Mars"] as const)
+            : ([activeCategory] as const)
+          ).map((cat) => {
+            const items = filtered.filter((m) => m.category === cat);
+            if (items.length === 0) return null;
+            return (
+              <div key={cat}>
+                <div className="flex items-end justify-between mb-10">
+                  <div>
+                    <h2 className="text-3xl md:text-4xl font-bold">{cat}</h2>
+                    <p className="text-muted-foreground mt-2">
+                      {items.length} karya tersedia
+                    </p>
+                  </div>
+                </div>
+                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                  {items.map((item, i) => (
+                    <ThumbnailCard key={item.slug} {...item} index={i} />
+                  ))}
+                </div>
+              </div>
+            );
+          })
+        )}
         {filtered.length === 0 && (
           <p className="text-center text-muted-foreground py-12">
-            Tidak ada materi yang cocok dengan pencarian Anda.
+            {activeCategory === "Favorit"
+              ? "Belum ada materi yang ditambahkan ke favorit. Klik ikon hati pada kartu untuk menyimpannya."
+              : "Tidak ada materi yang cocok dengan pencarian Anda."}
           </p>
         )}
       </section>
