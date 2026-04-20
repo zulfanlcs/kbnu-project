@@ -22,6 +22,7 @@ import marsNuAudio from "@/assets/mars-nu.mp3";
 import marsSyubbanulWathonAudio from "@/assets/mars-syubbanul-wathon.mp3";
 import marsIpnuAudio from "@/assets/mars-ipnu.mp3";
 import marsIppnuAudio from "@/assets/mars-ippnu.mp3";
+import marsAnsorAudio from "@/assets/mars-ansor.mp3";
 
 export type Category = "Materi Sejarah" | "Mars";
 
@@ -401,8 +402,47 @@ const mars: Material[] = [
       "Lagu kebangsaan Gerakan Pemuda Ansor yang menyalakan semangat kepanduan dan bela negara.",
     image: thumbMarsAnsor,
     category: "Mars",
-    content: "Tulis lirik Mars GP Ansor di sini.",
+    content: "",
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    audioUrl: marsAnsorAudio,
+    lyrics: [
+      {
+        label: "Bait 1",
+        lines: [
+          "Darah dan nyawa telah kuberikan",
+          "Syuhada rebah Allahu Akbar",
+          "Kini bebas rantai ikatan",
+          "Negara jaya Islam yang benar",
+        ],
+      },
+      {
+        label: "Bait 2",
+        lines: [
+          "Berkibar tinggi panji gerakan",
+          "Iman di dada patriot perkasa",
+          "Ansor maju satu barisan",
+          "Seribu rintangan patah semua",
+        ],
+      },
+      {
+        label: "Reff",
+        accent: true,
+        lines: [
+          "Tegakkan yang adil hancurkan yang dzalim",
+          "Makmur semua lenyap yang nista",
+          "Allahu Akbar – Allahu Akbar",
+          "Pagar baja gerakan kita",
+        ],
+      },
+      {
+        label: "Penutup",
+        accent: true,
+        lines: [
+          "Bangkitlah bangkit putera pertiwi",
+          "Tiada gentar dada ke muka",
+        ],
+      },
+    ],
   },
   {
     slug: "mars-fatayat",
