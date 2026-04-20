@@ -500,7 +500,7 @@ const mars: Material[] = [
     audioUrl: marsMuslimatAudio,
     lyrics: [
       {
-        title: "Bait 1",
+        label: "Bait 1",
         lines: [
           "Marilah Kaum Ibu Muslimat",
           "Nahdlatul Ulama nan setia",
@@ -511,7 +511,7 @@ const mars: Material[] = [
         ],
       },
       {
-        title: "Bait 2",
+        label: "Bait 2",
         lines: [
           "Majulah kaum ibu muslimat",
           "Pengemban, pembawa amanat",
@@ -522,7 +522,7 @@ const mars: Material[] = [
         ],
       },
       {
-        title: "Reff",
+        label: "Reff",
         accent: true,
         lines: [
           "Marilah hai kaum ibu",
