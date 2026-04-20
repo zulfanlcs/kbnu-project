@@ -440,6 +440,7 @@ const mars: Material[] = [
         lines: [
           "Bangkitlah bangkit putera pertiwi",
           "Tiada gentar dada ke muka",
+          "Bela agama bangsa dan negeri",
         ],
       },
     ],
