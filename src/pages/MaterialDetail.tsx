@@ -1,6 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import { ArrowLeft, Quote } from "lucide-react";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { FavoriteButton } from "@/components/FavoriteButton";
 import { Button } from "@/components/ui/button";
 import { getMaterial } from "@/data/materials";
 import MarsLayout from "@/components/MarsLayout";
@@ -87,7 +88,10 @@ const MaterialDetail = () => {
             <ArrowLeft className="h-4 w-4" />
             Kembali
           </Link>
-          <ThemeToggle />
+          <div className="flex items-center gap-2">
+            <FavoriteButton slug={material.slug} title={material.title} variant="pill" />
+            <ThemeToggle />
+          </div>
         </div>
       </header>
 
