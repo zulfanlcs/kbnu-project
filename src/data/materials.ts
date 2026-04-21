@@ -29,6 +29,7 @@ import marsMuslimatAudio from "@/assets/mars-muslimat.mp3";
 import marsBanserAudio from "@/assets/mars-banser.mp3";
 import marsPmiiAudio from "@/assets/mars-pmii.mp3";
 import marsPagarNusaAudio from "@/assets/mars-pagar-nusa.mp3";
+import marsHariSantriAudio from "@/assets/mars-hari-santri.mp3";
 
 export type Category = "Materi Sejarah" | "Mars";
 
@@ -701,6 +702,87 @@ const mars: Material[] = [
     category: "Mars",
     content: "Mars Hari Santri Nasional.",
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    audioUrl: marsHariSantriAudio,
+    lyrics: [
+      {
+        label: "Pembuka",
+        lines: ["22 Oktober 45"],
+      },
+      {
+        label: "Bait 1",
+        lines: [
+          "Resolusi Jihad panggilan jiwa",
+          "Santri dan ulama tetap setia",
+          "Berkorban pertahankan Indonesia",
+        ],
+      },
+      {
+        label: "Bait 2",
+        lines: [
+          "Saat ini kita telah merdeka",
+          "Mari teruskan perjuangan ulama",
+          "Berperan aktif dengan dasar Pancasila",
+          "Nusantara tanggung jawab kita",
+        ],
+      },
+      {
+        label: "Reff 1",
+        accent: true,
+        lines: [
+          "Hari Santri, Hari Santri, Hari Santri",
+          "Hari Santri bukti cinta pada negeri",
+          "Ridho dan rahmat dari Ilahi",
+          "NKRI harga mati",
+        ],
+      },
+      {
+        label: "Reff 2",
+        accent: true,
+        lines: [
+          "Ayo santri, ayo santri, ayo santri",
+          "Ayo ngaji dan patuh pada Kiai",
+          "Jayalah bangsa, jaya negara",
+          "Jayalah pesantren kita",
+        ],
+      },
+      {
+        label: "Bait 3",
+        lines: [
+          "Mari bersiap kita berangkat",
+          "ke pesantren dengan penuh semangat",
+          "Raih cita-cita luruskan niat",
+          "Mengabdi untuk kemaslahatan umat",
+        ],
+      },
+      {
+        label: "Reff 3",
+        accent: true,
+        lines: [
+          "Hari Santri, Hari Santri, Hari Santri",
+          "Hari Santri bukti cinta pada negeri",
+          "Ridho dan rahmat dari Ilahi",
+          "NKRI harga mati",
+        ],
+      },
+      {
+        label: "Reff 4",
+        accent: true,
+        lines: [
+          "Ayo santri, ayo santri, ayo santri",
+          "Ayo ngaji dan patuh pada kiai",
+          "Jayalah bangsa, jaya negara",
+          "Jayalah pesantren kita",
+        ],
+      },
+      {
+        label: "Penutup",
+        accent: true,
+        lines: [
+          "Jayalah bangsa negara",
+          "Jayalah Indonesia, Jayalah Indonesia",
+        ],
+      },
+    ],
   },
 ];
 
