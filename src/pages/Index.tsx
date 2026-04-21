@@ -4,19 +4,22 @@ import { ThemeToggle } from "@/components/ThemeToggle";
 import { ThumbnailCard } from "@/components/ThumbnailCard";
 import { Input } from "@/components/ui/input";
 import { materials } from "@/data/materials";
+import { useFavorites } from "@/hooks/use-favorites";
 
-const CATEGORIES = ["Semua", "Materi Sejarah", "Mars"] as const;
+const CATEGORIES = ["Semua", "Materi Sejarah", "Mars", "Favorit"] as const;
 type Category = (typeof CATEGORIES)[number];
 
 const Index = () => {
   const [query, setQuery] = useState("");
   const [activeCategory, setActiveCategory] = useState<Category>("Semua");
+  const { favorites, isFavorite } = useFavorites();
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
     return materials.filter((m) => {
       const matchesCategory =
-        activeCategory === "Semua" || m.category === activeCategory;
+        activeCategory === "Semua" ||
+        (activeCategory === "Favorit" ? isFavorite(m.slug) : m.category === activeCategory);
       const matchesQuery =
         !q ||
         m.title.toLowerCase().includes(q) ||
@@ -24,7 +27,7 @@ const Index = () => {
         m.description.toLowerCase().includes(q);
       return matchesCategory && matchesQuery;
     });
-  }, [query, activeCategory]);
+  }, [query, activeCategory, isFavorite, favorites]);
 
   return (
     <div className="min-h-screen bg-background">
@@ -58,6 +61,7 @@ const Index = () => {
           <div className="mt-6 flex flex-wrap items-center justify-center gap-2">
             {CATEGORIES.map((cat) => {
               const active = activeCategory === cat;
+              const showBadge = cat === "Favorit" && favorites.length > 0;
               return (
                 <button
                   key={cat}
@@ -71,6 +75,17 @@ const Index = () => {
                   aria-pressed={active}
                 >
                   {cat}
+                  {showBadge && (
+                    <span
+                      className={`ml-1 inline-flex h-5 min-w-5 items-center justify-center rounded-full px-1.5 text-xs font-semibold ${
+                        active
+                          ? "bg-brand-foreground/20 text-brand-foreground"
+                          : "bg-brand/10 text-brand"
+                      }`}
+                    >
+                      {favorites.length}
+                    </span>
+                  )}
                 </button>
               );
             })}
@@ -81,9 +96,14 @@ const Index = () => {
       <section id="work" className="container pb-24 space-y-16">
         {(activeCategory === "Semua"
           ? (["Materi Sejarah", "Mars"] as const)
+          : activeCategory === "Favorit"
+          ? (["Favorit"] as const)
           : ([activeCategory] as const)
         ).map((cat) => {
-          const items = filtered.filter((m) => m.category === cat);
+          const items =
+            cat === "Favorit"
+              ? filtered
+              : filtered.filter((m) => m.category === cat);
           if (items.length === 0) return null;
           return (
             <div key={cat}>
