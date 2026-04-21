@@ -4,19 +4,22 @@ import { ThemeToggle } from "@/components/ThemeToggle";
 import { ThumbnailCard } from "@/components/ThumbnailCard";
 import { Input } from "@/components/ui/input";
 import { materials } from "@/data/materials";
+import { useFavorites } from "@/hooks/use-favorites";
 
-const CATEGORIES = ["Semua", "Materi Sejarah", "Mars"] as const;
+const CATEGORIES = ["Semua", "Materi Sejarah", "Mars", "Favorit"] as const;
 type Category = (typeof CATEGORIES)[number];
 
 const Index = () => {
   const [query, setQuery] = useState("");
   const [activeCategory, setActiveCategory] = useState<Category>("Semua");
+  const { favorites, isFavorite } = useFavorites();
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
     return materials.filter((m) => {
       const matchesCategory =
-        activeCategory === "Semua" || m.category === activeCategory;
+        activeCategory === "Semua" ||
+        (activeCategory === "Favorit" ? isFavorite(m.slug) : m.category === activeCategory);
       const matchesQuery =
         !q ||
         m.title.toLowerCase().includes(q) ||
@@ -24,7 +27,7 @@ const Index = () => {
         m.description.toLowerCase().includes(q);
       return matchesCategory && matchesQuery;
     });
-  }, [query, activeCategory]);
+  }, [query, activeCategory, isFavorite, favorites]);
 
   return (
     <div className="min-h-screen bg-background">
