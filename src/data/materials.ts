@@ -569,7 +569,7 @@ const mars: Material[] = [
         lines: [
           "Maju ayo maju ayo terus maju",
           "Singkirkanlah dia dia dia",
-          "Kikis habislah mereka",
+          "Kikislah habis mereka",
           "Musuh agama dan ulama",
         ],
       },
