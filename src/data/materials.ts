@@ -26,6 +26,7 @@ import marsAnsorAudio from "@/assets/mars-ansor.mp3";
 import marsFatayatAudio from "@/assets/mars-fatayat.mp3";
 import marsMuslimatAudio from "@/assets/mars-muslimat.mp3";
 import marsBanserAudio from "@/assets/mars-banser.mp3";
+import marsPmiiAudio from "@/assets/mars-pmii.mp3";
 
 export type Category = "Materi Sejarah" | "Mars";
 
@@ -592,8 +593,39 @@ const mars: Material[] = [
       "Lagu Pergerakan Mahasiswa Islam Indonesia yang membakar semangat kaum intelektual muda.",
     image: thumbMarsPmii,
     category: "Mars",
-    content: "Tulis lirik Mars PMII di sini.",
+    content: "",
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    audioUrl: marsPmiiAudio,
+    lyrics: [
+      {
+        label: "Bait 1",
+        lines: [
+          "Inilah kami wahai Indonesia",
+          "Satu barisan dan satu cita",
+          "Pembela bangsa, penegak agama",
+          "Tangan terkepal dan maju kemuka",
+        ],
+      },
+      {
+        label: "Bait 2",
+        lines: [
+          "Habislah sudah masa yang suram",
+          "Selesai sudah derita yang lama",
+          "Dengan PMII kita berjuang",
+          "Tuk kemakmuran dan keadilan",
+        ],
+      },
+      {
+        label: "Reff",
+        accent: true,
+        lines: [
+          "Ilmu dan bakti kuberikan",
+          "Adil dan makmur kuperjuangkan",
+          "Tangan terkepal dan maju kemuka",
+          "Tangan terkepal dan maju kemuka",
+        ],
+      },
+    ],
   },
   {
     slug: "yalal-wathon",
