@@ -26,6 +26,7 @@ import marsAnsorAudio from "@/assets/mars-ansor.mp3";
 import marsFatayatAudio from "@/assets/mars-fatayat.mp3";
 import marsMuslimatAudio from "@/assets/mars-muslimat.mp3";
 import marsBanserAudio from "@/assets/mars-banser.mp3";
+import marsPmiiAudio from "@/assets/mars-pmii.mp3";
 
 export type Category = "Materi Sejarah" | "Mars";
 
