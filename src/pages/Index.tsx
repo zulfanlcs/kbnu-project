@@ -131,8 +131,8 @@ const Index = () => {
       </section>
 
       <footer className="border-t border-border/40 py-8">
-        <div className="container text-center text-sm text-muted-foreground">
-          © 2026 Lumen. Crafted with care.
+        <div className="container text-center text-muted-foreground text-lg">
+          © 2026 KBNU Online | MWC NU Bangunrejo
         </div>
       </footer>
     </div>
