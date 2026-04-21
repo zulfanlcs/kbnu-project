@@ -631,10 +631,10 @@ const mars: Material[] = [
     slug: "mars-psnu-pagar-nusa",
     title: "Mars PSNU Pagar Nusa",
     description:
-      "Syair cinta tanah air yang menjadi ruh perjuangan nahdliyin sepanjang masa.",
+      "Mars resmi Pencak Silat Nahdlatul Ulama Pagar Nusa yang membakar semangat pendekar.",
     image: thumbYalalWathon,
     category: "Mars",
-    content: "Tulis lirik Ya Lal Wathon di sini.",
+    content: "Tulis lirik Mars PSNU Pagar Nusa di sini.",
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
   },
 ];
