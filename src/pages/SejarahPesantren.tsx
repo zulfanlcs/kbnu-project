@@ -502,25 +502,6 @@ const SejarahPesantren = () => {
         </div>
       </section>
 
-      {/* VIDEO */}
-      <section className="container max-w-5xl pb-24">
-        <div className="text-center mb-8 space-y-2">
-          <h2 className="text-3xl md:text-4xl font-bold">Video Pembelajaran</h2>
-          <p className="text-muted-foreground">
-            Tonton ringkasan visual perjalanan Muslimat NU.
-          </p>
-        </div>
-        <div className="aspect-video overflow-hidden rounded-3xl shadow-elegant border border-border/40 bg-muted">
-          <iframe
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-            title="Muslimat NU"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            className="h-full w-full"
-          />
-        </div>
-      </section>
-
       <footer className="border-t border-border/40 py-8">
         <div className="container text-center text-sm text-muted-foreground">
           © 2026 Lumen. Crafted with care.

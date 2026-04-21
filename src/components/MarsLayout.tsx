@@ -373,25 +373,6 @@ const MarsLayout = ({ material }: Props) => {
         </div>
       </section>
 
-      {/* VIDEO */}
-      {material.videoUrl && (
-        <section className="container max-w-5xl pb-24">
-          <div className="text-center mb-8 space-y-2">
-            <h2 className="text-3xl md:text-4xl font-bold">Video {material.title}</h2>
-            <p className="text-muted-foreground">Tonton dan nyanyikan bersama.</p>
-          </div>
-          <div className="aspect-video overflow-hidden rounded-3xl shadow-elegant border border-border/40 bg-muted">
-            <iframe
-              src={material.videoUrl}
-              title={material.title}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              className="h-full w-full"
-            />
-          </div>
-        </section>
-      )}
-
       <footer className="border-t border-border/40 py-8">
         <div className="container text-center text-sm text-muted-foreground">
           © 2026 Lumen. Crafted with care.
