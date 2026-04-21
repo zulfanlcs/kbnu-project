@@ -628,8 +628,8 @@ const mars: Material[] = [
     ],
   },
   {
-    slug: "yalal-wathon",
-    title: "Ya Lal Wathon",
+    slug: "mars-psnu-pagar-nusa",
+    title: "Mars PSNU Pagar Nusa",
     description:
       "Syair cinta tanah air yang menjadi ruh perjuangan nahdliyin sepanjang masa.",
     image: thumbYalalWathon,
