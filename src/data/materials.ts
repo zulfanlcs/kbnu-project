@@ -706,7 +706,7 @@ const mars: Material[] = [
     lyrics: [
       {
         label: "Pembuka",
-        lines: ["22 Oktober 45"],
+        lines: ["22 Oktober '45"],
       },
       {
         label: "Bait 1",
