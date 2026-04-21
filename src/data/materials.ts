@@ -590,7 +590,7 @@ const mars: Material[] = [
     slug: "mars-pmii",
     title: "Mars PMII",
     description:
-      "Lagu Pergerakan Mahasiswa Islam Indonesia yang membakar semangat kaum intelektual muda.",
+      "Mars PMII (Pergerakan Mahasiswa Islam Indonesia) diciptakan oleh Shaimoery Wignjo Soebroto. Namun sayangnya, tidak ditemukan catatan tahun spesifik kapan Mars ini diciptakan.",
     image: thumbMarsPmii,
     category: "Mars",
     content: "",
