@@ -61,6 +61,7 @@ const Index = () => {
           <div className="mt-6 flex flex-wrap items-center justify-center gap-2">
             {CATEGORIES.map((cat) => {
               const active = activeCategory === cat;
+              const showBadge = cat === "Favorit" && favorites.length > 0;
               return (
                 <button
                   key={cat}
@@ -74,6 +75,17 @@ const Index = () => {
                   aria-pressed={active}
                 >
                   {cat}
+                  {showBadge && (
+                    <span
+                      className={`ml-1 inline-flex h-5 min-w-5 items-center justify-center rounded-full px-1.5 text-xs font-semibold ${
+                        active
+                          ? "bg-brand-foreground/20 text-brand-foreground"
+                          : "bg-brand/10 text-brand"
+                      }`}
+                    >
+                      {favorites.length}
+                    </span>
+                  )}
                 </button>
               );
             })}
@@ -84,9 +96,14 @@ const Index = () => {
       <section id="work" className="container pb-24 space-y-16">
         {(activeCategory === "Semua"
           ? (["Materi Sejarah", "Mars"] as const)
+          : activeCategory === "Favorit"
+          ? (["Favorit"] as const)
           : ([activeCategory] as const)
         ).map((cat) => {
-          const items = filtered.filter((m) => m.category === cat);
+          const items =
+            cat === "Favorit"
+              ? filtered
+              : filtered.filter((m) => m.category === cat);
           if (items.length === 0) return null;
           return (
             <div key={cat}>
