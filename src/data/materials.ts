@@ -632,7 +632,7 @@ const mars: Material[] = [
     slug: "mars-psnu-pagar-nusa",
     title: "Mars PSNU Pagar Nusa",
     description:
-      "Mars resmi Pencak Silat Nahdlatul Ulama Pagar Nusa yang membakar semangat pendekar.",
+      "Pencipta Mars Pagar Nusa adalah Heru Harun Supriyanto, seorang pendekar dan sarjana musik lulusan IKIP Negeri Semarang (sekarang UNNES). Mars Pagar Nusa diusulkan dan mulai diperkenalkan sekitar tahun 2015, ditandai dengan Pagar Nusa Jateng Usulkan Mars dan Hymne yang dinyanyikan pertama kali pada Pembukaan Rapimnas dan Apel Akbar Pagar Nusa Jateng di Semarang, akhir Maret 2015.",
     image: thumbYalalWathon,
     category: "Mars",
     content: "Mars PSNU Pagar Nusa.",
