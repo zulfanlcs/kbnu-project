@@ -18,6 +18,7 @@ import thumbMarsMuslimat from "@/assets/thumb-mars-muslimat.jpg";
 import thumbMarsBanser from "@/assets/thumb-mars-banser.jpg";
 import thumbMarsPmii from "@/assets/thumb-mars-pmii.jpg";
 import thumbYalalWathon from "@/assets/thumb-yalal-wathon.jpg";
+import thumbMarsHariSantri from "@/assets/thumb-mars-hari-santri.jpg";
 import marsNuAudio from "@/assets/mars-nu.mp3";
 import marsSyubbanulWathonAudio from "@/assets/mars-syubbanul-wathon.mp3";
 import marsIpnuAudio from "@/assets/mars-ipnu.mp3";
@@ -690,6 +691,16 @@ const mars: Material[] = [
         ],
       },
     ],
+  },
+  {
+    slug: "mars-hari-santri-nasional",
+    title: "Mars Hari Santri Nasional",
+    description:
+      "Mars yang dikumandangkan untuk memperingati Hari Santri Nasional setiap 22 Oktober, simbol semangat dan perjuangan kaum santri.",
+    image: thumbMarsHariSantri,
+    category: "Mars",
+    content: "Mars Hari Santri Nasional.",
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
   },
 ];
 
