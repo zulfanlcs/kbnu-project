@@ -538,27 +538,6 @@ const NahdlatulUlama = () => {
         </div>
       </section>
 
-      {/* VIDEO */}
-      <section className="container max-w-5xl pb-24">
-        <div className="text-center mb-8 space-y-2">
-          <h2 className="text-3xl md:text-4xl font-bold text-white">
-            Video Pembelajaran
-          </h2>
-          <p className="text-white/70">
-            Tonton ringkasan visual untuk pemahaman yang lebih dalam.
-          </p>
-        </div>
-        <div className="aspect-video overflow-hidden rounded-3xl shadow-elegant border border-white/10 bg-black/40">
-          <iframe
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-            title="Sejarah Nahdlatul Ulama"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            className="h-full w-full"
-          />
-        </div>
-      </section>
-
       <footer className="border-t border-white/10 py-8">
         <div className="container text-center text-sm text-white/60">
           © 2026 Lumen. Crafted with care.
