@@ -27,6 +27,7 @@ import marsFatayatAudio from "@/assets/mars-fatayat.mp3";
 import marsMuslimatAudio from "@/assets/mars-muslimat.mp3";
 import marsBanserAudio from "@/assets/mars-banser.mp3";
 import marsPmiiAudio from "@/assets/mars-pmii.mp3";
+import marsPagarNusaAudio from "@/assets/mars-pagar-nusa.mp3";
 
 export type Category = "Materi Sejarah" | "Mars";
 
@@ -634,8 +635,61 @@ const mars: Material[] = [
       "Mars resmi Pencak Silat Nahdlatul Ulama Pagar Nusa yang membakar semangat pendekar.",
     image: thumbYalalWathon,
     category: "Mars",
-    content: "Tulis lirik Mars PSNU Pagar Nusa di sini.",
+    content: "Mars PSNU Pagar Nusa.",
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    audioUrl: marsPagarNusaAudio,
+    lyrics: [
+      {
+        label: "Bait 1",
+        lines: [
+          "Pagar Nusa pendekar Bangsa",
+          "Pagar Nusa benteng ulama",
+          "Lahir dari Nahdlatul Ulama",
+          "Untuk Agama Bangsa dan Negara",
+        ],
+      },
+      {
+        label: "Bait 2",
+        lines: [
+          "Gerakan langkah kita sempurna",
+          "Budi pekerti jiwa yang suci",
+          "Menjunjung tinggi nilai luhur Bangsa",
+          "Berpegang teguh pada keyakinan Islam",
+        ],
+      },
+      {
+        label: "Reff 1",
+        accent: true,
+        lines: [
+          "La Gholiba Illa Billah",
+          "Kami adalah pelindung Bangsa",
+        ],
+      },
+      {
+        label: "Reff 2",
+        accent: true,
+        lines: [
+          "La Gholiba Illa Billah",
+          "Kami adalah Ksatria",
+        ],
+      },
+      {
+        label: "Reff 3",
+        accent: true,
+        lines: [
+          "La Gholiba Illa Billah",
+          "Tiada yg dapat mengalahkan",
+        ],
+      },
+      {
+        label: "Reff 4",
+        accent: true,
+        lines: [
+          "La Gholiba Illa Billah",
+          "Kecuali Pertolongan dari Allah",
+        ],
+      },
+    ],
   },
 ];
 
