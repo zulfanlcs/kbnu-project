@@ -538,7 +538,7 @@ const mars: Material[] = [
     slug: "mars-banser",
     title: "Mars Banser",
     description:
-      "Mars Barisan Ansor Serbaguna, penjaga ulama dan benteng NKRI.",
+      "Lagu \"Mars Banser (Izinkan Ayah Izinkan Ibu)\" merupakan salah satu lagu kebanggaan Banser yang liriknya populer, namun pencipta spesifik untuk lagu spesifik ini sering kali tidak tercantum secara eksplisit dalam arsip digital utama.",
     image: thumbMarsBanser,
     category: "Mars",
     content: "",
