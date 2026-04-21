@@ -697,7 +697,7 @@ const mars: Material[] = [
     slug: "mars-hari-santri-nasional",
     title: "Mars Hari Santri Nasional",
     description:
-      "Mars yang dikumandangkan untuk memperingati Hari Santri Nasional setiap 22 Oktober, simbol semangat dan perjuangan kaum santri.",
+      "Lagu \"Mars Hari Santri\" (22 Oktober) yang populer dinyanyikan saat peringatan Hari Santri Nasional diciptakan oleh Neno Warisman. Mars Hari Santri Nasional (HSN) dirilis secara resmi oleh Rabithah Ma'ahid Islamiyah Nahdlatul Ulama (RMI NU) pada tahun 2015, bersamaan dengan penetapan Hari Santri Nasional melalui Keputusan Presiden Nomor 22 Tahun 2015.",
     image: thumbMarsHariSantri,
     category: "Mars",
     content: "Mars Hari Santri Nasional.",
