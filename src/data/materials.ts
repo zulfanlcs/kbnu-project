@@ -25,6 +25,7 @@ import marsIppnuAudio from "@/assets/mars-ippnu.mp3";
 import marsAnsorAudio from "@/assets/mars-ansor.mp3";
 import marsFatayatAudio from "@/assets/mars-fatayat.mp3";
 import marsMuslimatAudio from "@/assets/mars-muslimat.mp3";
+import marsBanserAudio from "@/assets/mars-banser.mp3";
 
 export type Category = "Materi Sejarah" | "Mars";
 
@@ -540,8 +541,49 @@ const mars: Material[] = [
       "Mars Barisan Ansor Serbaguna, penjaga ulama dan benteng NKRI.",
     image: thumbMarsBanser,
     category: "Mars",
-    content: "Tulis lirik Mars Banser di sini.",
+    content: "",
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    audioUrl: marsBanserAudio,
+    lyrics: [
+      {
+        label: "Bait 1",
+        lines: [
+          "Izinkan ayah Izinkan ibu",
+          "Relakan kami pergi berjuang",
+          "Dibawah kibaran bendera NU",
+          "Majulah ayo maju serba serbu (serbu)",
+        ],
+      },
+      {
+        label: "Bait 2",
+        lines: [
+          "Tidak kembali pulang",
+          "Sebelum kita yang menang",
+          "Walau darah menetes di medan perang",
+          "Demi agama ku rela berkorban",
+        ],
+      },
+      {
+        label: "Reff",
+        accent: true,
+        lines: [
+          "Maju ayo maju ayo terus maju",
+          "Singkirkanlah dia dia dia",
+          "Kikis habislah mereka",
+          "Musuh agama dan ulama",
+        ],
+      },
+      {
+        label: "Penutup",
+        accent: true,
+        lines: [
+          "Wahai barisan Ansor serbaguna",
+          "Dimana engkau berada (disini)",
+          "Teruskanlah perjuangan",
+          "Demi agama ku rela berkorban",
+        ],
+      },
+    ],
   },
   {
     slug: "mars-pmii",
