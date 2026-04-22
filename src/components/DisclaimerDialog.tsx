@@ -11,8 +11,8 @@ import {
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
 
-const FACEBOOK_URL = "#";
-const INSTAGRAM_URL = "#";
+const FACEBOOK_URL = "https://www.facebook.com/profile.php?id=100007466684206";
+const INSTAGRAM_URL = "https://www.instagram.com/zulfan_ibnabdillah/";
 
 export const DisclaimerDialog = () => {
   const [open, setOpen] = useState(false);
