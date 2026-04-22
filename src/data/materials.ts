@@ -235,14 +235,7 @@ const mars: Material[] = [
     lyrics: [
       {
         label: "Bait 1",
-        timings: [6, 14, 20, 26],
         lines: [
-          "ياَ لَلْوَطَنْ ياَ لَلْوَطَن ياَ لَلْوَطَنْ",
-          "حُبُّ الْوَطَنْ مِنَ اْلإِيمَانْ",
-          "وَلاَتَكُنْ مِنَ الْحِرْماَنْ",
-          "اِنْهَضوُا أَهْلَ الْوَطَنْ",
-        ],
-        latin: [
           "Ya Lal Wathon Ya Lal Wathon Ya Lal Wathon",
           "Hubbul Wathon minal Iman",
           "Wala Takum minal Hirman",
@@ -251,14 +244,7 @@ const mars: Material[] = [
       },
       {
         label: "Bait 2",
-        timings: [33, 40, 46, 52],
         lines: [
-          "اِندُونيْسِياَ بِلاَدى",
-          "أَنْتَ عُنْواَنُ الْفَخَاماَ",
-          "كُلُّ مَنْ يَأْتِيْكَ يَوْماَ",
-          "طَامِحاً يَلْقَ حِماَمًا",
-        ],
-        latin: [
           "Indonesia Biladi",
           "Anta 'Unwanul Fakhoma",
           "Kullu May Ya'tika Yauma",
