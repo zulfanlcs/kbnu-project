@@ -69,11 +69,11 @@ const sejarah: Material[] = [
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
   },
   {
-    slug: "sejarah-pesantren",
-    title: "Sejarah Pesantren Nusantara",
+    slug: "muslimat-nu",
+    title: "Muslimat NU",
     description:
-      "Jejak panjang lembaga pendidikan Islam tradisional yang membentuk wajah keilmuan Indonesia.",
-    image: thumbSejarahPesantren,
+      "Mengenal lebih dekat organisasi sayap perempuan Nahdlatul Ulama dan perannya dalam masyarakat.",
+    image: thumbMarsMuslimat,
     category: "Materi Sejarah",
     content: "Tulis materi pembelajaran Anda di sini.",
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
