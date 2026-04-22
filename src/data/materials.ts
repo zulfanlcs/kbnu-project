@@ -73,7 +73,7 @@ const sejarah: Material[] = [
     title: "Muslimat NU",
     description:
       "Mengenal lebih dekat organisasi sayap perempuan Nahdlatul Ulama dan perannya dalam masyarakat.",
-    image: thumbSejarahPesantren,
+    image: thumbMarsMuslimat,
     category: "Materi Sejarah",
     content: "Tulis materi pembelajaran Anda di sini.",
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
