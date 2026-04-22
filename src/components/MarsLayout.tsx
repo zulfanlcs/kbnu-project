@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import {
   ArrowLeft,
@@ -43,7 +43,6 @@ const formatTime = (s: number) => {
 
 const MarsLayout = ({ material }: Props) => {
   const audioRef = useRef<HTMLAudioElement | null>(null);
-  const activeLineRef = useRef<HTMLParagraphElement | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
@@ -52,33 +51,6 @@ const MarsLayout = ({ material }: Props) => {
 
   const verses = material.lyrics?.length ? material.lyrics : FALLBACK_VERSES;
   const audioSrc = material.audioUrl ?? FALLBACK_AUDIO;
-
-  // Flatten all lines + timings to find active index
-  const flat = useMemo(() => {
-    const arr: { vIdx: number; lIdx: number; time: number | null }[] = [];
-    verses.forEach((v, vIdx) => {
-      v.lines.forEach((_, lIdx) => {
-        const t = v.timings?.[lIdx];
-        arr.push({ vIdx, lIdx, time: typeof t === "number" ? t : null });
-      });
-    });
-    return arr;
-  }, [verses]);
-
-  const hasTimings = flat.some((f) => f.time !== null);
-
-  const activeKey = useMemo(() => {
-    if (!hasTimings) return null;
-    let active: { vIdx: number; lIdx: number } | null = null;
-    for (const f of flat) {
-      if (f.time !== null && currentTime + 0.05 >= f.time) {
-        active = { vIdx: f.vIdx, lIdx: f.lIdx };
-      } else if (f.time !== null) {
-        break;
-      }
-    }
-    return active ? `${active.vIdx}-${active.lIdx}` : null;
-  }, [flat, currentTime, hasTimings]);
 
   useEffect(() => {
     const audio = audioRef.current;
@@ -106,15 +78,6 @@ const MarsLayout = ({ material }: Props) => {
     audio.volume = volume;
     audio.muted = muted;
   }, [volume, muted]);
-
-  // Auto-scroll active line into view
-  useEffect(() => {
-    if (!activeKey) return;
-    activeLineRef.current?.scrollIntoView({
-      behavior: "smooth",
-      block: "center",
-    });
-  }, [activeKey]);
 
   const togglePlay = () => {
     const audio = audioRef.current;
@@ -268,11 +231,6 @@ const MarsLayout = ({ material }: Props) => {
                 className="max-w-[200px]"
                 aria-label="Volume"
               />
-              {!hasTimings && material.lyrics?.length ? (
-                <span className="ml-auto text-[10px] uppercase tracking-widest text-muted-foreground hidden md:inline">
-                  Sinkron lirik belum tersedia
-                </span>
-              ) : null}
             </div>
 
             <audio ref={audioRef} src={audioSrc} preload="metadata" />
@@ -292,9 +250,7 @@ const MarsLayout = ({ material }: Props) => {
             Lirik <span className="text-brand">Bait per Bait</span>
           </h2>
           <p className="text-muted-foreground">
-            {hasTimings
-              ? "Baris yang sedang dinyanyikan akan disorot otomatis."
-              : "Resapi tiap baris syair perjuangan."}
+            Resapi tiap baris syair perjuangan.
           </p>
         </div>
 
@@ -314,53 +270,17 @@ const MarsLayout = ({ material }: Props) => {
               </div>
               <div className="pt-2 space-y-2">
                 {verse.lines.map((line, lIdx) => {
-                  const key = `${vIdx}-${lIdx}`;
-                  const isActive = activeKey === key;
                   const latinLine = verse.latin?.[lIdx];
                   return (
                     <div
                       key={lIdx}
-                      ref={isActive ? activeLineRef : null}
-                      onClick={() => {
-                        const t = verse.timings?.[lIdx];
-                        if (typeof t === "number" && audioRef.current) {
-                          audioRef.current.currentTime = t;
-                          setCurrentTime(t);
-                          if (!isPlaying) {
-                            audioRef.current.play().catch(() => {});
-                            setIsPlaying(true);
-                          }
-                        }
-                      }}
-                      className={`rounded-lg px-3 py-2 -mx-3 transition-all duration-300 ${
-                        verse.timings?.[lIdx] !== undefined ? "cursor-pointer" : ""
-                      } ${
-                        isActive
-                          ? "bg-brand/15 text-brand scale-[1.02] shadow-sm"
-                          : "hover:bg-muted/40"
-                      }`}
+                      className="rounded-lg px-3 py-2 -mx-3"
                     >
-                      <p
-                        dir="rtl"
-                        lang="ar"
-                        className={`leading-loose font-display ${
-                          isActive
-                            ? "font-semibold"
-                            : verse.accent
-                              ? "text-xl md:text-2xl text-foreground"
-                              : "text-xl md:text-2xl text-foreground"
-                        }`}
-                      >
+                      <p className="leading-loose font-display text-xl md:text-2xl text-foreground">
                         {line}
                       </p>
                       {latinLine && (
-                        <p
-                          className={`mt-1 leading-relaxed italic ${
-                            isActive
-                              ? "font-medium"
-                              : "text-sm md:text-base text-muted-foreground"
-                          }`}
-                        >
+                        <p className="mt-1 leading-relaxed italic text-sm md:text-base text-muted-foreground">
                           {latinLine}
                         </p>
                       )}
