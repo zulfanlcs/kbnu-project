@@ -58,7 +58,7 @@ const Index = () => {
 
       <footer className="border-t border-border/40 py-8">
         <div className="container text-center text-muted-foreground text-lg">
-          © 2026 KBNU Online | MWC NU Bangunrejo
+          © 2026 KBNU Online | Zulfan Ainul Mahdi
         </div>
       </footer>
     </div>
