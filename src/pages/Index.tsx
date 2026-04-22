@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import { Search } from "lucide-react";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { ThumbnailCard } from "@/components/ThumbnailCard";
+import { DisclaimerDialog } from "@/components/DisclaimerDialog";
 import { Input } from "@/components/ui/input";
 import { materials } from "@/data/materials";
 import { useFavorites } from "@/hooks/use-favorites";
@@ -31,6 +32,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <DisclaimerDialog />
       <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-background/70 border-b border-border/40">
         <div className="container flex h-16 items-center justify-between">
           <a href="/" className="flex items-center gap-2 font-display font-bold text-3xl">
