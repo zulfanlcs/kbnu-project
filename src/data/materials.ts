@@ -79,11 +79,11 @@ const sejarah: Material[] = [
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
   },
   {
-    slug: "resolusi-jihad",
-    title: "Resolusi Jihad 1945",
+    slug: "gp-ansor",
+    title: "GP Ansor",
     description:
-      "Fatwa bersejarah KH Hasyim Asy'ari yang memantik perjuangan kemerdekaan Indonesia.",
-    image: thumbResolusiJihad,
+      "Mengenal organisasi kepemudaan Nahdlatul Ulama dan perannya dalam membela agama dan bangsa.",
+    image: thumbMarsAnsor,
     category: "Materi Sejarah",
     content: "Tulis materi pembelajaran Anda di sini.",
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
