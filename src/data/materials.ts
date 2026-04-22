@@ -89,10 +89,10 @@ const sejarah: Material[] = [
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
   },
   {
-    slug: "muktamar-pertama-nu",
-    title: "Muktamar Pertama NU",
+    slug: "banser-barisan-ansor-serbaguna",
+    title: "(BANSER) Barisan Ansor Serbaguna",
     description:
-      "Tonggak awal perjalanan organisasi Nahdlatul Ulama dalam menetapkan arah perjuangan.",
+      "Mengenal lebih dekat satuan koordinasi nasional Barisan Ansor Serbaguna.",
     image: thumbMuktamarPertamaNu,
     category: "Materi Sejarah",
     content: "Tulis materi pembelajaran Anda di sini.",
