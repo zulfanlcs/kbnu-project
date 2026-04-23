@@ -9,6 +9,7 @@ import NotFound from "./pages/NotFound.tsx";
 import MaterialDetail from "./pages/MaterialDetail.tsx";
 import NahdlatulUlama from "./pages/NahdlatulUlama.tsx";
 import SejarahPesantren from "./pages/SejarahPesantren.tsx";
+import GpAnsor from "./pages/GpAnsor.tsx";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +24,7 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/materi/nahdlatul-ulama" element={<NahdlatulUlama />} />
             <Route path="/materi/sejarah-pesantren" element={<SejarahPesantren />} />
+            <Route path="/materi/gp-ansor" element={<GpAnsor />} />
             <Route path="/materi/:slug" element={<MaterialDetail />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
