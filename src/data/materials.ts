@@ -99,11 +99,11 @@ const sejarah: Material[] = [
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
   },
   {
-    slug: "kh-hasyim-asyari",
-    title: "KH Hasyim Asy'ari",
+    slug: "fatayat-nu",
+    title: "Fatayat NU",
     description:
-      "Biografi Hadratussyaikh, pendiri NU dan tokoh ulama besar Nusantara.",
-    image: thumbKhHasyimAsyari,
+      "Mengenal organisasi pemudi Nahdlatul Ulama dan perannya dalam pemberdayaan perempuan.",
+    image: thumbMarsFatayat,
     category: "Materi Sejarah",
     content: "Tulis materi pembelajaran Anda di sini.",
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
