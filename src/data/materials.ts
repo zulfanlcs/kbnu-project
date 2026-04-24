@@ -109,11 +109,11 @@ const sejarah: Material[] = [
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
   },
   {
-    slug: "kh-wahab-hasbullah",
-    title: "KH Wahab Hasbullah",
+    slug: "ipnu",
+    title: "(IPNU) Ikatan Pelajar Nahdlatul Ulama",
     description:
-      "Sang penggerak NU, perumus konsep Mabadi Khaira Ummah dan pencipta Syubbanul Wathon.",
-    image: thumbKhWahabHasbullah,
+      "Organisasi kemasyarakatan yang merupakan badan otonom di bawah naungan Nahdlatul Ulama.",
+    image: thumbMarsIpnu,
     category: "Materi Sejarah",
     content: "Tulis materi pembelajaran Anda di sini.",
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
