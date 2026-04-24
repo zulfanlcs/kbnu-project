@@ -119,11 +119,11 @@ const sejarah: Material[] = [
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
   },
   {
-    slug: "komite-hijaz",
-    title: "Komite Hijaz",
+    slug: "ippnu",
+    title: "Ikatan Pelajar Putri Nahdlatul Ulama",
     description:
-      "Misi diplomatik ulama Nusantara yang menjadi cikal bakal lahirnya Nahdlatul Ulama.",
-    image: thumbKomiteHijaz,
+      "Organisasi kemasyarakatan yang merupakan badan otonom di bawah naungan Nahdlatul Ulama untuk pelajar putri.",
+    image: thumbMarsIppnu,
     category: "Materi Sejarah",
     content: "Tulis materi pembelajaran Anda di sini.",
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
