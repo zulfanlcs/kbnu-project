@@ -11,6 +11,7 @@ import NahdlatulUlama from "./pages/NahdlatulUlama.tsx";
 import SejarahPesantren from "./pages/SejarahPesantren.tsx";
 import GpAnsor from "./pages/GpAnsor.tsx";
 import Banser from "./pages/Banser.tsx";
+import FatayatNu from "./pages/FatayatNu.tsx";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +28,7 @@ const App = () => (
             <Route path="/materi/sejarah-pesantren" element={<SejarahPesantren />} />
             <Route path="/materi/gp-ansor" element={<GpAnsor />} />
             <Route path="/materi/banser-barisan-ansor-serbaguna" element={<Banser />} />
+            <Route path="/materi/fatayat-nu" element={<FatayatNu />} />
             <Route path="/materi/:slug" element={<MaterialDetail />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
