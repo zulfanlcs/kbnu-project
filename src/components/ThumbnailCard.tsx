@@ -9,9 +9,10 @@ interface ThumbnailCardProps {
   title: string;
   description: string;
   index: number;
+  priority?: boolean;
 }
 
-export function ThumbnailCard({ slug, image, category, title, description, index }: ThumbnailCardProps) {
+export function ThumbnailCard({ slug, image, category, title, description, index, priority = false }: ThumbnailCardProps) {
   return (
     <Link
       to={`/materi/${slug}`}
@@ -24,7 +25,9 @@ export function ThumbnailCard({ slug, image, category, title, description, index
           alt={title}
           width={800}
           height={600}
-          loading="lazy"
+          loading={priority ? "eager" : "lazy"}
+          decoding={priority ? "sync" : "async"}
+          {...(priority ? { fetchPriority: "high" as const } : { fetchPriority: "low" as const })}
           className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
         />
         <FavoriteButton
