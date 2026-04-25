@@ -96,7 +96,7 @@ const Index = () => {
               </div>
               <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                 {items.map((item, i) => (
-                  <ThumbnailCard key={item.slug} {...item} index={i} />
+                  <ThumbnailCard key={item.slug} {...item} index={i} priority={i === 0} />
                 ))}
               </div>
             </div>
