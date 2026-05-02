@@ -7,32 +7,32 @@
 
 @layer base {
   :root {
-    --background: 180 0% 99.2%;
-    --foreground: 0 0% 0%;
+    --background: 180 6% 95%;
+    --foreground: 0 0% 8%;
 
-    --card: 180 0% 99.2%;
-    --card-foreground: 0 0% 0%;
+    --card: 180 6% 96.5%;
+    --card-foreground: 0 0% 8%;
 
-    --popover: 0 0% 98.8%;
-    --popover-foreground: 0 0% 0%;
+    --popover: 180 6% 96%;
+    --popover-foreground: 0 0% 8%;
 
     --primary: 152.8 84.1% 62.9%;
     --primary-foreground: 0 0% 0%;
 
-    --secondary: 180 20.7% 99%;
-    --secondary-foreground: 195 0% 3.1%;
+    --secondary: 180 6% 93%;
+    --secondary-foreground: 195 0% 10%;
 
-    --muted: 0 0% 96.1%;
-    --muted-foreground: 0 0% 32.2%;
+    --muted: 180 5% 91%;
+    --muted-foreground: 0 0% 30%;
 
-    --accent: 150 100% 98.8%;
-    --accent-foreground: 152.9 85.2% 27%;
+    --accent: 150 40% 92%;
+    --accent-foreground: 152.9 85.2% 22%;
 
     --destructive: 338.2 89.5% 45%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 210 22.1% 96.5%;
-    --input: 0 0% 92.2%;
+    --border: 210 8% 88%;
+    --input: 0 0% 86%;
     --ring: 152.8 84.1% 62.9%;
 
     /* Brand tokens kept for compatibility with existing components (gradients, hero) */
@@ -48,14 +48,14 @@
 
     --radius: 1.4rem;
 
-    --sidebar-background: 0 0% 100%;
-    --sidebar-foreground: 0 0% 0%;
-    --sidebar-primary: 0 0% 0%;
+    --sidebar-background: 180 6% 94%;
+    --sidebar-foreground: 0 0% 8%;
+    --sidebar-primary: 0 0% 8%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 154.6 92.9% 94.5%;
-    --sidebar-accent-foreground: 0 0% 0%;
-    --sidebar-border: 0 0% 92.2%;
-    --sidebar-ring: 0 0% 0%;
+    --sidebar-accent: 154.6 50% 88%;
+    --sidebar-accent-foreground: 0 0% 8%;
+    --sidebar-border: 0 0% 86%;
+    --sidebar-ring: 0 0% 8%;
   }
 
   .dark {
