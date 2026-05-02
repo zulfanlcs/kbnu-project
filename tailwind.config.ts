@@ -69,8 +69,10 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        display: ["Space Grotesk", "sans-serif"],
-        sans: ["Inter", "sans-serif"],
+        display: ["Plus Jakarta Sans", "sans-serif"],
+        sans: ["Plus Jakarta Sans", "sans-serif"],
+        serif: ["Lora", "serif"],
+        mono: ["IBM Plex Mono", "monospace"],
       },
       backgroundImage: {
         "gradient-hero": "var(--gradient-hero)",
